@@ -1,0 +1,49 @@
+.header-pc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    height: 70px;  
+    z-index: 999;
+
+    .container{
+        width: 1200px;
+        margin: auto;
+
+        .logo{
+            float: left;
+            line-height: 70px;
+            font-size: 24px;
+            color: #fff;
+
+            span{
+                height: 24px;
+                line-height: 24px;
+                color: #01d4d7;
+                display: inline-block;
+                border-bottom: 2px solid #01d4d7;
+                padding-right: 5px;
+            }
+        }
+
+        .nav{
+            float: right;
+
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        display: block;
+                        color: #fff;
+                        line-height: 70px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #ccc;
+                        padding: 0 25px;
+                    }
+                }
+            }
+        }
+    }
+}

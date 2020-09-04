@@ -1,0 +1,221 @@
+@import "@/assets/css/base.scss";
+@import "@/assets/css/common.scss";
+@import "@/assets/css/animated.scss";
+
+body{
+    .page-index{
+
+        .banner{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../../assets/images/index/homebg.png);
+            background-position: center;
+            background-size: 100% 100%;
+            overflow: hidden;
+
+            .buddle{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                z-index: 1;
+
+                .buddle-one {
+                    width: 262px;
+                    height: 262px;
+                    position: absolute;
+                    left: -38px;
+                    bottom: 47px;
+                    filter: blur(15px);
+                    animation: move1 10s ease infinite alternate;
+                }
+
+                .buddle-two {
+                    width: 183px;
+                    height: 183px;
+                    position: absolute;
+                    left: 552px;
+                    top: 0;
+                    filter: blur(15px);
+                    animation: move2 10s ease infinite alternate;
+                }
+
+                .buddle-three {
+                    width: 158px;
+                    height: 158px;
+                    position: absolute;
+                    left: 838px;
+                    bottom: 251px;
+                    filter: blur(15px);
+                    animation: move3 10s ease infinite alternate;
+                }
+
+                .buddle-four {
+                    width: 213px;
+                    height: 213px;
+                    position: absolute;
+                    right: 41px;
+                    bottom: 318px;
+                    filter: blur(15px);
+                    animation: move4 10s ease infinite alternate;
+                }
+            }
+
+            .inner{
+                position: absolute;
+                width: 1200px;
+                height: 100vh;
+                left: 50%;
+                top: 0;
+                margin-left: -600px;
+
+                .inner-content{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    .ornament{
+                        position: absolute;
+                        left: 0;
+                        top: 170px;
+                    }
+
+                    .left{
+                        position: absolute;
+                        height: 190px;
+                        top: 50%;
+                        left: 0;
+                        margin-top: -95px;
+
+                        img{
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+
+                    .right{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        margin-top: -245px;
+                        width: 491px;
+                        height: 491px;
+
+                        .banner-circle-box{
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .circle-l{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 491px;
+                            height: 491px;
+                            background: url(../../assets/images/index/circle-l.png) no-repeat;
+                            animation: RotateL 5s 2s linear infinite;
+                            -webkit-animation: RotateL 5s 2s linear infinite;
+                            -moz-animation: RotateL 5s 2s linear infinite;
+                        } 
+                        
+                        .circle-s{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-top: -179px;
+                            margin-left: -179px;
+                            width: 358px;
+                            height: 358px;
+                            background: url(../../assets/images/index/circle-s.png) no-repeat;
+                            animation: RotateS 3s 3s linear infinite;
+                            -webkit-animation: RotateS 3s 3s linear infinite;
+                            -moz-animation: RotateS 3s 3s linear infinite;
+                        }
+
+                        .center{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+
+                            img{
+                                width: 200px;
+                                animation: Shake 3s ease-in-out infinite;
+                            }
+                        }
+
+                        .do-item{
+                            position: absolute;
+
+                            .circle {
+                                width: 34px;
+                                height: 34px;
+                                line-height: 34px;
+                                text-align: center;
+                                color: #fff;
+                                font-size: 20px;
+                                border-radius: 100%;
+                                margin: 0 auto;
+                            }
+
+                            .filter-bg{
+                                filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#00bde5, endcolorstr=#03fcdc, gradientType=0);
+                                -ms-filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#00bde5, endcolorstr=#03fcdc, gradientType=0);
+                                background: -webkit-linear-gradient(90deg, #00bde5, #03fcdc);
+                                background: -o-linear-gradient(90deg, #00bde5, #03fcdc);
+                                background: -moz-linear-gradient(90deg, #00bde5, #03fcdc);
+                                background: -ms-linear-gradient(90deg, #00bde5, #03fcdc);
+                                background: linear-gradient(90deg, #00bde5, #03fcdc);
+                            }
+
+                            p{
+                                margin: 10px 0;
+                                font-size: 16px;
+                                color: #fff;
+                            }
+
+                            &.p1{
+                                top: -58px;
+                                left: 216px;
+                            }
+
+                            &.p2{
+                                top: 144px;
+                                right: -17px;
+                            }
+
+                            &.p3{
+                                bottom: 17px;
+                                right: 32px;
+                            }
+
+                            &.p4{
+                                bottom: 17px;
+                                left: 33px;
+                            }
+
+                            &.p5{
+                                bottom: 273px;
+                                left: -12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .arrow{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin-left: -10px;
+                width: 40px;
+                animation: ShakeFadeIn 2s ease-in-out infinite;
+            }
+        }
+
+    }   
+}
